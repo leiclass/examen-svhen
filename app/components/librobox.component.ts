@@ -7,7 +7,8 @@ import {Libro} from '../common/libro';
   `
     <div class="libro">
     	<img [src]="libro.image">
-    	<h2>{{libro.name}}</h2>
+      <h2>{{libro.name}}</h2>
+    	<h3>{{libro.artistName}}</h3>
     	<span class="price">
     		{{libro.price | currency : 'USD': true : '1.2-2'}}
     	</span>
@@ -20,5 +21,4 @@ import {Libro} from '../common/libro';
 export class LibroBoxComponent{
   @Input()
   libro : Libro;
-  
 }

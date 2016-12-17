@@ -21,7 +21,7 @@ __decorate([
 LibroBoxComponent = __decorate([
     core_1.Component({
         selector: 'librobox',
-        template: "\n    <div class=\"libro\">\n    \t<img [src]=\"libro.image\">\n    \t<h2>{{libro.name}}</h2>\n    \t<span class=\"price\">\n    \t\t{{libro.price | currency : 'USD': true : '1.2-2'}}\n    \t</span>\n    \t<br />\n    \t<button>Agregar al carrito</button>\n    </div>\n  "
+        template: "\n    <div class=\"libro\">\n    \t<img [src]=\"libro.image\">\n      <h2>{{libro.name}}</h2>\n    \t<h3>{{libro.artistName}}</h3>\n    \t<span class=\"price\">\n    \t\t{{libro.price | currency : 'USD': true : '1.2-2'}}\n    \t</span>\n    \t<br />\n    \t<button>Agregar al carrito</button>\n    </div>\n  "
     }),
     __metadata("design:paramtypes", [])
 ], LibroBoxComponent);
